@@ -16,7 +16,7 @@ export default function Skills() {
     return (
         <MainContainer>
             <section className="mb-10">
-            <p>The following is a list of tools that I've already used. But it does not mean that I have mastered those tools.</p>
+            <p>The following is a list of tools that I&lsquo;ve already used. But it does not mean that I have mastered those tools.</p>
             <p>It only means that I know enough to not type code randomly expecting things to work based on brute force (or excpecting a miracle).</p>
             </section>
 

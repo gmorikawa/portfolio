@@ -1,6 +1,5 @@
 import { ImageMenuItem } from "@portifolio/components/ImageMenuItem";
 import { MainContainer } from "@portifolio/components/MainContainer";
-import Image from "next/image";
 import contact from "@portifolio/data/contact.json";
 
 export default function Contact() {
