@@ -7,14 +7,22 @@ export default function Home() {
         <main className="p-10">
             <section id="profile-card" className="card">
                 <header className="mb-6">
-                    <h2 style={{ fontSize: "50px", fontFamily: "'Yuji Syuku', serif" }}>
-                        こんにちは
+                    <h4 className="text-lg">
+                        森川ガブリエル
+                    </h4>
+
+                    <h2 className="text-4xl">
+                        Gabriel Morikawa
+                    </h2>
+
+                    <h2 className="text-lg">
+                        Software Developer
                     </h2>
                 </header>
 
                 <main>
                     {presentation.map((paragraph: string, index: number) => (
-                        <p key={index} className="mb-2" style={{ fontFamily: "'Yuji Syuku', serif" }}>
+                        <p key={index} className="mb-2">
                             {paragraph}
                         </p>
                     ))}

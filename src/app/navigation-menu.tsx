@@ -10,6 +10,9 @@ export function NavigationMenu(props: NavigationMenuProps) {
                     <Link href="/">Home</Link>
                 </li>
                 <li className="list-item">
+                    <Link href="/skills">Skills</Link>
+                </li>
+                <li className="list-item">
                     <Link href="/projects">Projects</Link>
                 </li>
                 <li className="list-item">

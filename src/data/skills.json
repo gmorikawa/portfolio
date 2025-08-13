@@ -1,0 +1,62 @@
+{
+    "programming-languages": [
+        {
+            "language": "C",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg"
+        },
+        {
+            "language": "Java",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+        },
+        {
+            "language": "C#",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-plain.svg"
+        },
+        {
+            "language": "Javascript",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+        },
+        {
+            "language": "Typescript",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg"
+        },
+        {
+            "language": "Python",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+        },
+        {
+            "language": "Rust",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg"
+        },
+        {
+            "language": "PHP",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg"
+        },
+        {
+            "language": "HTML",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+        },
+        {
+            "language": "CSS",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+        }
+    ],
+    "database": [
+        {
+            "database": "MySQL",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"
+        },
+        {
+            "database": "Postgres",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original-wordmark.svg"
+        },
+        {
+            "database": "MongoDB",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg"
+        },
+        {
+            "database": "SQL Server",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original-wordmark.svg"
+        }
+    ]
+}
