@@ -1,4 +1,5 @@
 import data from "@portifolio/data/presentation.json";
+import personal from "@portifolio/data/personal-information.json";
 
 export default function Home() {
     const presentation: string[] = data["en-US"];
@@ -8,15 +9,15 @@ export default function Home() {
             <section id="profile-card" className="card">
                 <header className="mb-6">
                     <h4 className="text-lg">
-                        森川ガブリエル
+                        {personal?.name?.japanese}
                     </h4>
 
                     <h2 className="text-4xl">
-                        Gabriel Morikawa
+                        {personal?.name?.original}
                     </h2>
 
                     <h2 className="text-lg">
-                        Software Developer
+                        {personal?.title}
                     </h2>
                 </header>
 

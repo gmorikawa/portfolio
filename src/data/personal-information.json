@@ -1,8 +1,7 @@
 {
     "name": {
-        "ja-JP": {
-            "furigana": "森川ガブリエル",
-            "original": "Morikawa Gabriel"
-        }
-    }
+        "original": "Gabriel Morikawa ",
+        "japanese": "森川ガブリエル"
+    },
+    "title": "Software Developer"
 }
