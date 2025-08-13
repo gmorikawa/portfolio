@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100&family=Sawarabi+Gothic&family=Yuji+Syuku&display=swap');
 @import "tailwindcss";
 
 /* :root {
@@ -24,7 +25,7 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 } */
-
+/* 
 :root {
   --color-black: #222;
   --spacing: 4px;
@@ -52,6 +53,8 @@ body {
   font-size: larger;
   font-weight: bold;
   text-transform: uppercase;
+
+  font-family: "Noto Sans", sans-serif;
 }
 
 .card-subtitle {
@@ -156,4 +159,4 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
