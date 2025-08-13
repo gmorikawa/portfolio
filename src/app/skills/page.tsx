@@ -22,7 +22,7 @@ export default function Skills() {
 
                 <div className="flex flex-row gap-4">
                     {programmingLanguages?.map((skill: Tool) => (
-                        <Image unoptimized src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}
                 </div>
             </section>
@@ -34,7 +34,7 @@ export default function Skills() {
 
                 <div className="flex flex-row gap-4">
                     {databases?.map((skill: Tool) => (
-                        <Image unoptimized src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}
                 </div>
             </section>
@@ -46,7 +46,7 @@ export default function Skills() {
 
                 <div className="flex flex-row gap-4">
                     {frameworks?.map((skill: Tool) => (
-                        <Image unoptimized src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}
                 </div>
             </section>
@@ -58,7 +58,7 @@ export default function Skills() {
 
                 <div className="flex flex-row gap-4">
                     {devops?.map((skill: Tool) => (
-                        <Image unoptimized src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}
                 </div>
             </section>

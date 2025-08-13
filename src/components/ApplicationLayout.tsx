@@ -17,14 +17,13 @@ export function ApplicationLayout(props: ApplicationLayoutProps) {
                     {props?.side}
                 </div>
 
-                <div className="flex flex-col grow">
-                    <div className="grow">
-                        {props?.main}
-                    </div>
-                    <div className="basis-auto">
-                        {props?.footer}
-                    </div>
+                <div className="grow">
+                    {props?.main}
                 </div>
+            </div>
+
+            <div className="basis-auto">
+                {props?.footer}
             </div>
         </div>
     );

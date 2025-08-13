@@ -4,6 +4,7 @@ import { AppRoot } from "@portifolio/components/AppRoot";
 import { ApplicationLayout } from "@portifolio/components/ApplicationLayout";
 import { ApplicationMenu } from "./menu";
 import { PortifolioHeader } from "./header";
+import { PortifolioFooter } from "./footer";
 
 export const metadata: Metadata = {
     title: "Gabriel Morikawa | Software Developer, Full-Stack Developer, Game Developer",
@@ -17,6 +18,7 @@ export default function RootLayout(props: Readonly<{ children: React.ReactNode; 
                 header={<PortifolioHeader />}
                 side={<ApplicationMenu />}
                 main={props.children}
+                footer={<PortifolioFooter />}
             />
         </AppRoot>
     );
