@@ -1,8 +1,10 @@
+import { MainContainer } from "@portifolio/components/MainContainer";
+
 export default function Projects() {
     return (
-        <main id="content">
+        <MainContainer>
             Nothing yet
-        </main>
+        </MainContainer>
     );
 }
 

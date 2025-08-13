@@ -17,7 +17,7 @@
             "ja-JP": "リンクトイン"
         },
         "value": "linkedin.com/in/gmorikawa",
-        "icon": "https://s.magecdn.com/social/tc-linkedin.svg"
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
     },
     {
         "type": "social",
@@ -27,6 +27,6 @@
             "ja-JP": "ギットハブ"
         },
         "value": "github.com/gmorikawa",
-        "icon": "https://cdn.simpleicons.org/github/181717"
+        "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
     }
 ]
