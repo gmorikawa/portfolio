@@ -5,7 +5,7 @@ export interface AppRootProps {
 export function AppRoot(props: AppRootProps) {
     return (
         <html lang="en">
-            <body className="h-dvh bg-red-50">
+            <body className="h-dvh">
                 {props?.children}
             </body>
         </html>

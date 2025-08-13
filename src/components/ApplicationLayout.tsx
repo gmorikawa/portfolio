@@ -8,20 +8,20 @@ export interface ApplicationLayoutProps {
 export function ApplicationLayout(props: ApplicationLayoutProps) {
     return (
         <div className="h-full flex flex-col">
-            <div className="basis-auto bg-amber-100">
+            <div className="basis-auto">
                 {props?.header}
             </div>
 
             <div className="flex flex-row grow">
-                <div className="basis-auto bg-amber-200">
+                <div className="basis-auto">
                     {props?.side}
                 </div>
 
-                <div className="flex flex-col grow bg-amber-300">
+                <div className="flex flex-col grow">
                     <div className="grow">
                         {props?.main}
                     </div>
-                    <div className="basis-auto bg-amber-400">
+                    <div className="basis-auto">
                         {props?.footer}
                     </div>
                 </div>
