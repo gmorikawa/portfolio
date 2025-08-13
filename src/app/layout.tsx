@@ -9,6 +9,9 @@ import { PortifolioFooter } from "./footer";
 export const metadata: Metadata = {
     title: "Gabriel Morikawa | Software Developer, Full-Stack Developer, Game Developer",
     description: "Welcome to my portifolio!",
+    icons: {
+        icon: "/favicon.png"
+    }
 };
 
 export default function RootLayout(props: Readonly<{ children: React.ReactNode; }>) {
