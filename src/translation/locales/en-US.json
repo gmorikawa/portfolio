@@ -9,7 +9,7 @@
     "skills_menu_label": "Skills",
     "contact_menu_label": "Contact",
     "skills_warning": [
-        "The following is a list of tools that I&lsquo;ve already used. But it does not mean that I have mastered those tools.",
+        "The following is a list of tools that I have already used. But it does not mean that I have mastered those tools.",
         "It only means that I know enough to not type code randomly expecting things to work based on brute force (or excpecting a miracle)."
     ],
     "skill_programming_languages": "Programming Languages",

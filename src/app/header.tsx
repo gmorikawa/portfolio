@@ -6,7 +6,7 @@ export type PortifolioHeaderProps = React.ComponentProps<"header">;
 
 export function PortifolioHeader({ className, ...props }: PortifolioHeaderProps) {
     return (
-        <header {...props} className={Style.join("p-10 flex justify-between", className)}>
+        <header {...props} className={Style.join("p-5 md:p-10 flex flex-col md:flex-row justify-between", className)}>
             <div className="grow">
                 <h4 className="text-lg">
                     {personal?.name?.japanese}

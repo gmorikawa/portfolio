@@ -29,7 +29,7 @@ export default async function Skills() {
                     <h5>{translations["skill_programming_languages"]}</h5>
                 </header>
 
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row flex-wrap gap-4">
                     {programmingLanguages?.map((skill: Tool) => (
                         <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}
@@ -41,7 +41,7 @@ export default async function Skills() {
                     <h5>{translations["skill_databases"]}</h5>
                 </header>
 
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row flex-wrap gap-4">
                     {databases?.map((skill: Tool) => (
                         <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}
@@ -53,7 +53,7 @@ export default async function Skills() {
                     <h5>{translations["skill_frameworks"]}</h5>
                 </header>
 
-                <div className="flex flex-row gap-4">
+                <div className="flex flex-row flex-wrap gap-4">
                     {frameworks?.map((skill: Tool) => (
                         <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
                     ))}

@@ -12,7 +12,7 @@ export function ApplicationLayout(props: ApplicationLayoutProps) {
                 {props?.header}
             </div>
 
-            <div className="flex flex-row grow">
+            <div className="flex flex-col md:flex-row grow">
                 <div className="basis-auto">
                     {props?.side}
                 </div>
