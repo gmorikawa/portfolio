@@ -1,9 +1,9 @@
 import { MainContainer } from "@portifolio/components/MainContainer";
-import data from "@portifolio/data/presentation.json";
+import { getTranslation } from "@portifolio/translation/serverTranslation";
 
-
-export default function Home() {
-    const presentation: string[] = data["en-US"];
+export default async function Home() {
+    const data = await getTranslation();
+    const presentation: string[] = data?.presentation;
 
     return (
         <MainContainer>

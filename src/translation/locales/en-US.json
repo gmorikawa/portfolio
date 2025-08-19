@@ -1,0 +1,19 @@
+{
+    "presentation": [
+        "Hello, my name is Gabriel Morikawa! Nice to meet you!",
+        "I am a Brazilian Software Engineer with a degree in Game Development, and currently living in Japan.",
+        "Yes! Game Development! I've loved playing games since I was a child, and I wanted to understand how they are made. But I can also develop systems and create websites.",
+        "I am driven by curiosity and challenge. Let's talk!"
+    ],
+    "home_menu_label": "Home",
+    "skills_menu_label": "Skills",
+    "contact_menu_label": "Contact",
+    "skills_warning": [
+        "The following is a list of tools that I&lsquo;ve already used. But it does not mean that I have mastered those tools.",
+        "It only means that I know enough to not type code randomly expecting things to work based on brute force (or excpecting a miracle)."
+    ],
+    "skill_programming_languages": "Programming Languages",
+    "skill_databases": "Databases",
+    "skill_frameworks": "Frameworks",
+    "skill_dev_ops": "DevOps"
+}

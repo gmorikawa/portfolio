@@ -1,5 +1,6 @@
 import { MainContainer } from "@portifolio/components/MainContainer";
 import data from "@portifolio/data/skills.json";
+import { getTranslation } from "@portifolio/translation/serverTranslation";
 import Image from "next/image";
 
 interface Tool {
@@ -7,7 +8,9 @@ interface Tool {
     icon: string;
 }
 
-export default function Skills() {
+export default async function Skills() {
+    const translations = await getTranslation();
+
     const programmingLanguages: Tool[] = data["programming-languages"];
     const databases: Tool[] = data["databases"];
     const frameworks: Tool[] = data["frameworks"];
@@ -16,13 +19,14 @@ export default function Skills() {
     return (
         <MainContainer>
             <section className="mb-10">
-            <p>The following is a list of tools that I&lsquo;ve already used. But it does not mean that I have mastered those tools.</p>
-            <p>It only means that I know enough to not type code randomly expecting things to work based on brute force (or excpecting a miracle).</p>
+                {translations["skills_warning"]?.map((line: string, index: number) => (
+                    <p key={index}>{line}</p>
+                ))}
             </section>
 
             <section className="mb-10">
                 <header className="mb-4 text-xl">
-                    <h5>Programming Languages</h5>
+                    <h5>{translations["skill_programming_languages"]}</h5>
                 </header>
 
                 <div className="flex flex-row gap-4">
@@ -34,7 +38,7 @@ export default function Skills() {
             
             <section className="mb-10">
                 <header className="mb-4 text-xl">
-                    <h5>Databases</h5>
+                    <h5>{translations["skill_databases"]}</h5>
                 </header>
 
                 <div className="flex flex-row gap-4">
@@ -46,7 +50,7 @@ export default function Skills() {
 
             <section className="mb-10">
                 <header className="mb-4 text-xl">
-                    <h5>Frameworks</h5>
+                    <h5>{translations["skill_frameworks"]}</h5>
                 </header>
 
                 <div className="flex flex-row gap-4">
@@ -58,7 +62,7 @@ export default function Skills() {
 
             <section className="mb-10">
                 <header className="mb-4 text-xl">
-                    <h5>DevOps</h5>
+                    <h5>{translations["skill_dev_ops"]}</h5>
                 </header>
 
                 <div className="flex flex-row gap-4">
