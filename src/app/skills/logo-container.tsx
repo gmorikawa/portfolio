@@ -7,6 +7,7 @@ export function LogoContainer({ children, className, ...props }: LogoContainerPr
         <div
             style={{ scrollbarWidth: "none" }}
             className={Style.join("flex flex-row gap-4 overflow-x-auto", className)}
+            {...props}
         >
             {children}
         </div>

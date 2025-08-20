@@ -18,7 +18,7 @@ export function LanguageButton({ language, children, className, onClick, ...prop
     return (
         <div
             onClick={handleClick}
-            className={Style.join("cursor-pointer text-2xl md:text-xl", className)}
+            className={Style.join("cursor-pointer text-2xl md:text-xl select-none", className)}
             {...props}
         >
             {children}
