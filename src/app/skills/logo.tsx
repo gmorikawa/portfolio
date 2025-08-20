@@ -14,6 +14,7 @@ export function Logo({ src, label, size }: LogoProps) {
             width={size ?? 50}
             height={size ?? 50}
             alt={label}
+            loading="lazy"
         />
     );
 }

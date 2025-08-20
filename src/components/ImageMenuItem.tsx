@@ -12,7 +12,7 @@ export interface ImageMenuItemProps extends React.ComponentProps<"li"> {
 export function ImageMenuItem({ image, label, width, height, className, ...props }: ImageMenuItemProps) {
     return (
         <li {...props} className={Style.join("flex flex-row gap-5 items-center-safe p-2", className)}>
-            <Image unoptimized src={image} width={width || 50} height={height || 50} alt={label} />
+            <Image unoptimized src={image} width={width || 50} height={height || 50} alt={label} loading="lazy" />
             <p>
                 {label}
             </p>
