@@ -1,7 +1,9 @@
 import { MainContainer } from "@portifolio/components/MainContainer";
 import data from "@portifolio/data/skills.json";
 import { getTranslation } from "@portifolio/translation/serverTranslation";
-import Image from "next/image";
+import { Logo } from "./logo";
+import { LogoContainer } from "./logo-container";
+import { ToolsContainer } from "./tools-container";
 
 interface Tool {
     label: string;
@@ -24,53 +26,37 @@ export default async function Skills() {
                 ))}
             </section>
 
-            <section className="mb-10">
-                <header className="mb-4 text-xl">
-                    <h5>{translations["skill_programming_languages"]}</h5>
-                </header>
-
-                <div className="flex flex-row flex-wrap gap-4">
+            <ToolsContainer title={translations["skill_programming_languages"]}>
+                <LogoContainer>
                     {programmingLanguages?.map((skill: Tool) => (
-                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
                     ))}
-                </div>
-            </section>
-            
-            <section className="mb-10">
-                <header className="mb-4 text-xl">
-                    <h5>{translations["skill_databases"]}</h5>
-                </header>
+                </LogoContainer>
+            </ToolsContainer>
 
-                <div className="flex flex-row flex-wrap gap-4">
+            <ToolsContainer title={translations["skill_databases"]}>
+                <LogoContainer>
                     {databases?.map((skill: Tool) => (
-                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
                     ))}
-                </div>
-            </section>
+                </LogoContainer>
+            </ToolsContainer>
 
-            <section className="mb-10">
-                <header className="mb-4 text-xl">
-                    <h5>{translations["skill_frameworks"]}</h5>
-                </header>
-
-                <div className="flex flex-row flex-wrap gap-4">
+            <ToolsContainer title={translations["skill_frameworks"]}>
+                <LogoContainer>
                     {frameworks?.map((skill: Tool) => (
-                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
                     ))}
-                </div>
-            </section>
+                </LogoContainer>
+            </ToolsContainer>
 
-            <section className="mb-10">
-                <header className="mb-4 text-xl">
-                    <h5>{translations["skill_dev_ops"]}</h5>
-                </header>
-
-                <div className="flex flex-row gap-4">
+            <ToolsContainer title={translations["skill_dev_ops"]}>
+                <LogoContainer>
                     {devops?.map((skill: Tool) => (
-                        <Image unoptimized key={skill?.label} src={skill?.icon} width={75} height={75} alt={skill?.label} />
+                        <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
                     ))}
-                </div>
-            </section>
+                </LogoContainer>
+            </ToolsContainer>
         </MainContainer>
     );
 }
