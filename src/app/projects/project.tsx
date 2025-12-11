@@ -6,6 +6,8 @@ import StackContainer from "@portifolio/components/container/StackContainer";
 import List from "@portifolio/components/data-display/List";
 import Paragraph from "@portifolio/components/typography/Paragraph";
 import Text from "@portifolio/components/typography/Text";
+import { Icons } from "@portifolio/common/icons";
+import { Style } from "@portifolio/utils/style";
 
 type Title = string;
 type Description = string;
@@ -58,7 +60,7 @@ export function Project({ title, description, repositories, icon }: ProjectProps
                                     <FlexContainer className="gap-2 flex-wrap">
                                         {repository.technologies.map((technology, techIndex: number) => (
                                             <Badge key={techIndex}>
-                                                {technology}
+                                                <i className={Style.join(Icons[technology])} /> {technology}
                                             </Badge>
                                         ))}
                                     </FlexContainer>
