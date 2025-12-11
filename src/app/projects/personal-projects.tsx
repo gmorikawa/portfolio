@@ -1,22 +1,17 @@
+import { Project } from "@portifolio/common/types/project";
+import { projects } from "@portifolio/data/projects";
+
 import StackContainer from "@portifolio/components/container/StackContainer";
 
-import { Project } from "./project";
-
-import projects from "@portifolio/data/projects.json";
+import { ProjectSection } from "./project";
 
 export interface PersonalProjectProps { }
 
 export function PersonalProjects({ }: PersonalProjectProps) {
     return (
         <StackContainer className="gap-4">
-            {projects.map((project, index: number) => (
-                <Project
-                    key={index}
-                    title={project.title}
-                    description={project.description}
-                    repositories={project.repositories}
-                    icon={project.icon}
-                />
+            {projects.map((project: Project, index: number) => (
+                <ProjectSection key={index} project={project} />
             ))}
         </StackContainer>
     );

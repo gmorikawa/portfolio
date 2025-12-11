@@ -7,45 +7,32 @@ import List from "@portifolio/components/data-display/List";
 import Paragraph from "@portifolio/components/typography/Paragraph";
 import Text from "@portifolio/components/typography/Text";
 
-import { Icons } from "@portifolio/common/icons";
-import { Style } from "@portifolio/utils/style";
 import { getTranslation } from "@portifolio/translation/serverTranslation";
-
-type Title = string;
-type Description = string;
-type IconLink = string;
-type ProjectRepository = {
-    label: string;
-    url: string;
-    description: string;
-    technologies: string[];
-};
+import { Project } from "@portifolio/common/types/project";
+import { GithubIcon } from "@portifolio/common/icons";
 
 export interface ProjectProps {
-    title: Title;
-    description: Description;
-    repositories: ProjectRepository[];
-    icon: IconLink
+    project: Project
 }
 
-export async function Project({ title, description, repositories, icon }: ProjectProps) {
+export async function ProjectSection({ project }: ProjectProps) {
     const translations = await getTranslation();
 
     return (
         <StackContainer className="gap-4">
             <FlexContainer className="gap-8">
                 <Container className="basis-auto">
-                    <img src={icon} alt={`${title} Icon`} className="w-48 border-1 border-gray-300 rounded-lg" />
+                    <img src={project.icon} alt={`${project.title} Icon`} className="w-48 border-1 border-gray-300 rounded-lg" />
                 </Container>
 
                 <Container className="flex-grow">
                     <header className="mb-4">
                         <h5 className="font-bold text-2xl">
-                            {title}
+                            {project.title}
                         </h5>
                     </header>
 
-                    <Paragraph>{translations(description)}</Paragraph>
+                    <Paragraph>{translations(project.description)}</Paragraph>
                 </Container>
             </FlexContainer>
 
@@ -53,12 +40,12 @@ export async function Project({ title, description, repositories, icon }: Projec
                 <h6 className="font-bold">Repositories</h6>
 
                 <List.Container className="mb-4">
-                    {repositories.map((repository, repositoryIndex: number) => (
+                    {project.repositories.map((repository, repositoryIndex: number) => (
                         <List.Item key={repositoryIndex}>
                             <StackContainer className="gap-2 py-2">
                                 <FlexContainer justify="start" align="center" className="gap-2">
                                     <Text>
-                                        <i className={Style.join(Icons["Github"])} />
+                                        <GithubIcon />
                                     </Text>
                                     <Hyperlink href={repository.url} target="_blank" rel="noopener noreferrer">
                                         {repository.label}
@@ -70,7 +57,7 @@ export async function Project({ title, description, repositories, icon }: Projec
                                 <FlexContainer className="gap-2 flex-wrap">
                                     {repository.technologies.map((technology, techIndex: number) => (
                                         <Badge key={techIndex}>
-                                            <i className={Style.join(Icons[technology])} /> {technology}
+                                            {technology.icon} {technology.label}
                                         </Badge>
                                     ))}
                                 </FlexContainer>

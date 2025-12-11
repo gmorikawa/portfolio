@@ -1,5 +1,5 @@
 'use client'
-import { LanguageISOCode } from "@portifolio/types/language";
+import { LanguageISOCode } from "@portifolio/common/types/language";
 import { FlagEmoji } from "@portifolio/utils/emoji";
 import { Style } from "@portifolio/utils/style";
 import { changeLanguage } from "./actions";

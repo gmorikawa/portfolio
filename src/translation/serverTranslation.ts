@@ -1,4 +1,4 @@
-import { LanguageISOCode } from "@portifolio/types/language";
+import { LanguageISOCode } from "@portifolio/common/types/language";
 import { cookies } from "next/headers";
 
 import portuguese from "./locales/pt-BR.json";

@@ -1,6 +1,6 @@
 'use server'
 
-import { LanguageISOCode } from "@portifolio/types/language";
+import { LanguageISOCode } from "@portifolio/common/types/language";
 import { cookies } from "next/headers";
 
 export async function changeLanguage(language: LanguageISOCode) {
