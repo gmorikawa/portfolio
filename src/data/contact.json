@@ -7,6 +7,7 @@
             "ja-JP": "メールアドレス"
         },
         "value": "gabriel.morikawa@live.com",
+        "link": "mailto:gabriel.morikawa@live.com",
         "icon": "https://s.magecdn.com/social/mb-mail.svg"
     },
     {
@@ -17,6 +18,7 @@
             "ja-JP": "リンクトイン"
         },
         "value": "linkedin.com/in/gmorikawa",
+        "link": "https://linkedin.com/in/gmorikawa",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg"
     },
     {
@@ -27,6 +29,7 @@
             "ja-JP": "ギットハブ"
         },
         "value": "github.com/gmorikawa",
+        "link": "https://github.com/gmorikawa",
         "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
     }
 ]
