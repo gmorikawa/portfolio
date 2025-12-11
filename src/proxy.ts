@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server"
 import type { NextRequest } from "next/server"
-import { Language } from "./middlewares/language";
+import { Language } from "./proxies/language";
 
 const DEFAULT_LANGUAGE = "en-US";
 const COOKIE_LANGUAGE = "language";
@@ -17,7 +17,7 @@ const availableLanguages = [
     { "variation": "ja-JP", "target": "ja-JP" }
 ];
 
-export async function middleware(req: NextRequest) {
+export async function proxy(req: NextRequest) {
     const res = NextResponse.next()
     const language = req.cookies.get(COOKIE_LANGUAGE)?.value || "";
     const clientLanguages = req.headers.get("accept-language") || "";
