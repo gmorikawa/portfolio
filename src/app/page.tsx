@@ -1,4 +1,4 @@
-import { MainContainer } from "@portifolio/components/MainContainer";
+import MainContainer from "@portifolio/components/MainContainer";
 import { getTranslation } from "@portifolio/translation/serverTranslation";
 
 export default async function Home() {

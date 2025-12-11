@@ -1,6 +1,6 @@
-import { Hyperlink } from "@portifolio/components/Hyperlink";
-import { ImageMenuItem } from "@portifolio/components/ImageMenuItem";
-import { MainContainer } from "@portifolio/components/MainContainer";
+import Hyperlink from "@portifolio/components/Hyperlink";
+import ImageMenuItem from "@portifolio/components/ImageMenuItem";
+import MainContainer from "@portifolio/components/MainContainer";
 import contact from "@portifolio/data/contact.json";
 
 export default function Contact() {

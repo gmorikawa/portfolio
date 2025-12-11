@@ -28,3 +28,5 @@ export function ApplicationLayout(props: ApplicationLayoutProps) {
         </div>
     );
 }
+
+export default ApplicationLayout;

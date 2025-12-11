@@ -17,3 +17,5 @@ export function ImageMenuItem({ image, description, width, height, className, ch
         </li>
     );
 }
+
+export default ImageMenuItem;

@@ -15,3 +15,5 @@ export function ActionMenuItem({ link, label, className, ...props }: ActionMenuI
         </li>
     );
 }
+
+export default ActionMenuItem;

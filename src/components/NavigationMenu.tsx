@@ -11,3 +11,5 @@ export function NavigationMenu({ className, children, ...props }: NavigationMenu
         </nav>
     )
 }
+
+export default NavigationMenu;

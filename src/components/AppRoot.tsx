@@ -12,3 +12,5 @@ export function AppRoot(props: AppRootProps) {
         </html>
     );
 }
+
+export default AppRoot;

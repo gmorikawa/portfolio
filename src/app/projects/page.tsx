@@ -1,9 +1,13 @@
-import { MainContainer } from "@portifolio/components/MainContainer";
+import MainContainer from "@portifolio/components/MainContainer";
+import { PersonalProjects } from "./personal-projects";
+import Container from "@portifolio/components/container/Container";
 
 export default function Projects() {
     return (
         <MainContainer>
-            Nothing yet
+            <Container className="pb-10 mb-10 border-b-1 border-gray-300">
+                <PersonalProjects />
+            </Container>
         </MainContainer>
     );
 }

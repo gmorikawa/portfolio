@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { AppRoot } from "@portifolio/components/AppRoot";
-import { ApplicationLayout } from "@portifolio/components/ApplicationLayout";
+import AppRoot from "@portifolio/components/AppRoot";
+import ApplicationLayout from "@portifolio/components/ApplicationLayout";
 import { ApplicationMenu } from "./menu";
 import { PortifolioHeader } from "./header";
 import { PortifolioFooter } from "./footer";

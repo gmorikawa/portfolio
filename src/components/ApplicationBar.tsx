@@ -5,3 +5,5 @@ export function ApplicationBar() {
         </div>
     );
 }
+
+export default ApplicationBar;

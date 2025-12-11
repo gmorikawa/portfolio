@@ -9,3 +9,5 @@ export function MainContainer({ children, className, ...props }: MainContainerPr
         </main>
     );
 }
+
+export default MainContainer;

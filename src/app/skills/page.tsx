@@ -1,4 +1,4 @@
-import { MainContainer } from "@portifolio/components/MainContainer";
+import MainContainer from "@portifolio/components/MainContainer";
 import data from "@portifolio/data/skills.json";
 import { getTranslation } from "@portifolio/translation/serverTranslation";
 import { Logo } from "./logo";
