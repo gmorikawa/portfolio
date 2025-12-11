@@ -20,12 +20,6 @@ export default async function Skills() {
 
     return (
         <MainContainer>
-            <section className="mb-10">
-                {translations["skills_warning"]?.map((line: string, index: number) => (
-                    <p key={index}>{line}</p>
-                ))}
-            </section>
-
             <ToolsContainer title={translations["skill_programming_languages"]}>
                 <LogoContainer>
                     {programmingLanguages?.map((skill: Tool) => (

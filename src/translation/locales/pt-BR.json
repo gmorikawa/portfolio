@@ -1,17 +1,14 @@
 {
     "presentation": [
-        "Olá, meu nome é Gabriel Morikawa! Prazer!",
+        "Olá, meu nome é Gabriel Morikawa!",
         "Sou um Engenheiro de Software brasileiro formado em Jogos Digitais, e atualmente, morando no Japão.",
-        "Sim! Jogos Digitais! Gosto muito de jogar desde criança, e quis entender como jogos são criados. Mas também consigo desenvolver sistemas e criar sites.",
-        "Sou movido pela curiosidade e pelo desafio. Vamos conversar!"
+        "Comecei a aprender programação aos 16 anos e tenho experiência com várias linguagens de programação e tecnologias. Gosto de aprender coisas novas e enfrentar desafios.",
+        "Prazer em conhecê-lo!"
     ],
     "home_menu_label": "Inicio",
     "skills_menu_label": "Habilidades",
+    "projects_menu_label": "Projetos",
     "contact_menu_label": "Contato",
-    "skills_warning": [
-        "A seguir está uma lista de ferramentas que eu já utilizei. Mas isso não significa que eu tenha dominado essas ferramentas.",
-        "Significa apenas que eu sei o suficiente para não digitar código aleatoriamente esperando que as coisas funcionem por força-bruta (ou esperando um milagre)."
-    ],
     "skill_programming_languages": "Linguagens de Programação",
     "skill_databases": "Banco de Dados",
     "skill_frameworks": "Frameworks",
