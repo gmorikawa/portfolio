@@ -2,8 +2,8 @@ import MainContainer from "@portifolio/components/MainContainer";
 import { getTranslation } from "@portifolio/translation/serverTranslation";
 
 export default async function Home() {
-    const data = await getTranslation();
-    const presentation: string[] = data?.presentation;
+    const translations = await getTranslation();
+    const presentation: string[] = translations("presentation") as string[];
 
     return (
         <MainContainer>

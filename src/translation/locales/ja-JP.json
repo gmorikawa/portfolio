@@ -12,5 +12,16 @@
     "skill_programming_languages": "プログラミング言語",
     "skill_databases": "データベース",
     "skill_frameworks": "フレームワーク",
-    "skill_dev_ops": "デブオプス"
+    "skill_dev_ops": "デブオプス",
+    "repository_label": "リポジトリ",
+    "project": {
+        "toshokan": {
+            "description": "本をカタログ化し整理するための個人図書館管理システム。",
+            "repository": {
+                "toshokan": "メインリポジトリ、バックエンドアプリケーション。",
+                "toshokan-web": "フロントエンドのウェブアプリケーション。",
+                "toshokan-ops": "運用およびデプロイスクリプト。"
+            }
+        }
+    }
 }

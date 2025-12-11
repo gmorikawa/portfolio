@@ -9,6 +9,7 @@ import Text from "@portifolio/components/typography/Text";
 
 import { Icons } from "@portifolio/common/icons";
 import { Style } from "@portifolio/utils/style";
+import { getTranslation } from "@portifolio/translation/serverTranslation";
 
 type Title = string;
 type Description = string;
@@ -27,7 +28,9 @@ export interface ProjectProps {
     icon: IconLink
 }
 
-export function Project({ title, description, repositories, icon }: ProjectProps) {
+export async function Project({ title, description, repositories, icon }: ProjectProps) {
+    const translations = await getTranslation();
+
     return (
         <StackContainer className="gap-4">
             <FlexContainer className="gap-8">
@@ -42,7 +45,7 @@ export function Project({ title, description, repositories, icon }: ProjectProps
                         </h5>
                     </header>
 
-                    <Paragraph>{description}</Paragraph>
+                    <Paragraph>{translations(description)}</Paragraph>
                 </Container>
             </FlexContainer>
 
@@ -61,7 +64,7 @@ export function Project({ title, description, repositories, icon }: ProjectProps
                                         {repository.label}
                                     </Hyperlink>
 
-                                    <Text>{repository.description}</Text>
+                                    <Text>{translations(repository.description)}</Text>
                                 </FlexContainer>
 
                                 <FlexContainer className="gap-2 flex-wrap">

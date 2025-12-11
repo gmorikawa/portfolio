@@ -7,10 +7,10 @@ export async function ApplicationMenu() {
 
     return (
         <NavigationMenu>
-            <ActionMenuItem link="/" label={translations["home_menu_label"]} className="mb-2" />
-            <ActionMenuItem link="/skills" label={translations["skills_menu_label"]} className="mb-2" />
-            <ActionMenuItem link="/projects" label={translations["projects_menu_label"]} className="mb-2" />
-            <ActionMenuItem link="/contact" label={translations["contact_menu_label"]} className="mb-2" />
+            <ActionMenuItem link="/" label={translations("home_menu_label")} className="mb-2" />
+            <ActionMenuItem link="/skills" label={translations("skills_menu_label")} className="mb-2" />
+            <ActionMenuItem link="/projects" label={translations("projects_menu_label")} className="mb-2" />
+            <ActionMenuItem link="/contact" label={translations("contact_menu_label")} className="mb-2" />
         </NavigationMenu>
     )
 }

@@ -20,7 +20,7 @@ export default async function Skills() {
 
     return (
         <MainContainer>
-            <ToolsContainer title={translations["skill_programming_languages"]}>
+            <ToolsContainer title={translations("skill_programming_languages")}>
                 <LogoContainer>
                     {programmingLanguages?.map((skill: Tool) => (
                         <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
@@ -28,7 +28,7 @@ export default async function Skills() {
                 </LogoContainer>
             </ToolsContainer>
 
-            <ToolsContainer title={translations["skill_databases"]}>
+            <ToolsContainer title={translations("skill_databases")}>
                 <LogoContainer>
                     {databases?.map((skill: Tool) => (
                         <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
@@ -36,7 +36,7 @@ export default async function Skills() {
                 </LogoContainer>
             </ToolsContainer>
 
-            <ToolsContainer title={translations["skill_frameworks"]}>
+            <ToolsContainer title={translations("skill_frameworks")}>
                 <LogoContainer>
                     {frameworks?.map((skill: Tool) => (
                         <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />
@@ -44,7 +44,7 @@ export default async function Skills() {
                 </LogoContainer>
             </ToolsContainer>
 
-            <ToolsContainer title={translations["skill_dev_ops"]}>
+            <ToolsContainer title={translations("skill_dev_ops")}>
                 <LogoContainer>
                     {devops?.map((skill: Tool) => (
                         <Logo key={skill?.label} src={skill?.icon} label={skill?.label} />

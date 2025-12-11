@@ -12,5 +12,16 @@
     "skill_programming_languages": "Linguagens de Programação",
     "skill_databases": "Banco de Dados",
     "skill_frameworks": "Frameworks",
-    "skill_dev_ops": "Dev Ops"
+    "skill_dev_ops": "Dev Ops",
+    "repository_label": "Repositório",
+    "project": {
+        "toshokan": {
+            "description": "Um sistema de gerenciamento de biblioteca pessoal para catalogar e organizar livros.",
+            "repository": {
+                "toshokan": "Repositório principal, aplicação backend.",
+                "toshokan-web": "Aplicação web front-end.",
+                "toshokan-ops": "Scripts de operações e implantação."
+            }
+        }
+    }
 }

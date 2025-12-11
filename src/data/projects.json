@@ -1,24 +1,24 @@
 [
     {
         "title": "図書館　toshokan",
-        "description": "A personal library management system to catalog and organize books.",
+        "description": "project.toshokan.description",
         "repositories": [
             { 
                 "label": "toshokan",
                 "url": "https://github.com/gmorikawa/toshokan",
-                "description": "Main repository, backend application.",
+                "description": "project.toshokan.repository.toshokan",
                 "technologies": ["Java", "Spring Boot", "PostgreSQL", "Maven"]
             },
             {
                 "label": "toshokan-web",
                 "url": "https://github.com/gmorikawa/toshokan-web",
-                "description": "Front-end web application.",
+                "description": "project.toshokan.repository.toshokan-web",
                 "technologies": ["TypeScript", "React", "Vite", "Chakra UI", "React Router"]
             },
             {
                 "label": "toshokan-ops",
                 "url": "https://github.com/gmorikawa/toshokan-ops",
-                "description": "Operations and deployment scripts.",
+                "description": "project.toshokan.repository.toshokan-ops",
                 "technologies": ["Docker"]
             }
         ],

@@ -16,5 +16,21 @@ export async function getTranslation() {
         [LanguageISOCode.JAPANESE]: japanese,
     };
 
-    return contexts[language];
+    return (key: string): any => {
+        const dictionary = contexts[language];
+
+        const props = key.split(".");
+        let obj = dictionary as any;
+
+        for (const prop of props) {
+            if (obj && prop in obj) {
+                // @ts-ignore
+                obj = obj[prop];
+            } else {
+                return key;
+            }
+        }
+
+        return obj;
+    };
 }
