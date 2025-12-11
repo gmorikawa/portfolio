@@ -5,7 +5,7 @@ import Container from "@portifolio/components/container/Container";
 export default function Projects() {
     return (
         <MainContainer>
-            <Container className="pb-10 mb-10 border-b-1 border-gray-300">
+            <Container className="pb-10 mb-10">
                 <PersonalProjects />
             </Container>
         </MainContainer>

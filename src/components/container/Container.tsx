@@ -1,8 +1,12 @@
+import { Style } from "@portifolio/utils/style";
+
 export interface ContainerProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 export function Container({ className, ...props }: ContainerProps) {
+    const defaultClasses = "";
+
     return (
-        <div {...props} />
+        <div className={Style.join(defaultClasses, className)} {...props} />
     );
 }
 

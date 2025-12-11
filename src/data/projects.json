@@ -1,13 +1,13 @@
 [
     {
-        "title": "Toshokan",
+        "title": "図書館　toshokan",
         "description": "A personal library management system to catalog and organize books.",
         "repositories": [
             { 
                 "label": "toshokan",
                 "url": "https://github.com/gmorikawa/toshokan",
                 "description": "Main repository, backend application.",
-                "technologies": ["Java", "Spring Boot", "PostgreSQL"]
+                "technologies": ["Java", "Spring Boot", "PostgreSQL", "Maven"]
             },
             {
                 "label": "toshokan-web",
